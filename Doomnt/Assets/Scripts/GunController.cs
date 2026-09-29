@@ -85,7 +85,7 @@ public class GunController : MonoBehaviour
 
                 RaycastHit hit;
 
-                if(Physics.Raycast(transform.position, dir, out hit, gun.range * 1.5f))
+                if(Physics.Raycast(transform.position, dir, out hit, gun.range * 1.5f,raycastLayerMask))
                 {
                     if(hit.transform == enemy.transform)
                     {
