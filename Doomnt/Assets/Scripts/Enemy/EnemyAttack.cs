@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
@@ -18,6 +17,7 @@ public class EnemyAttack : MonoBehaviour
         {
             //enemyAggro.animator.SetBool("isAttacking", true);
             isAttacking = true;
+            Debug.Log("El jugador se encuentra en el área de daño del enemigo");
         }
     }
 
@@ -27,7 +27,7 @@ public class EnemyAttack : MonoBehaviour
         {
             //enemyAggro.animator.SetBool("isAttacking", false);
             isAttacking = false;
+            Debug.Log("El jugador ha salido del área de daño de este");
         }
     }
-
 }
